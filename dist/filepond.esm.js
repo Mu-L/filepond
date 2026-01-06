@@ -4824,6 +4824,11 @@ const actions = (dispatch, query, state) => ({
             processNext();
         });
 
+        // abort function
+        item.onOnce('process-abort', () => {
+            processNext();
+        });
+
         // start file processing
         const options = state.options;
         item.process(

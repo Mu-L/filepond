@@ -7226,6 +7226,11 @@
                     processNext();
                 });
 
+                // abort function
+                item.onOnce('process-abort', function() {
+                    processNext();
+                });
+
                 // start file processing
                 var options = state.options;
                 item.process(
