@@ -1,5 +1,9 @@
 # Changelog
 
+## 4.32.11
+
+-   Merge fix file processing aborted and moving to next file. #1065
+
 ## 4.32.10
 
 -   Added various new locales.
